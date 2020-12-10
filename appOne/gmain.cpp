@@ -8,11 +8,8 @@ void gmain() {
         if (isTrigger(KEY_D)) {
             ++area;
         }
-        if (isTrigger(KEY_A)) {
+        if (isTrigger(KEY_A) && area > 0) {
             --area;
-            if (area < 0) {
-                area = 0;
-            }
         }
         //³•ûŒ`‚Ì–ÊÏ‚©‚çˆê•Ó‚Ì’·‚³‚ğ‹‚ß‚é
         length = sqrt(area);
